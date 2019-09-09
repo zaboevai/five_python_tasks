@@ -27,7 +27,7 @@ dict2 = []
 for person in sample_object:
     for key, value in person.items():
         if key == 'Name':
-            blog_person_info[key] = value
+            blog_person_info['ParentId'] = value
         elif key == 'Blogs':
             for blog_key, blog_date in value.items():
                 blog_person_info[blog_key] = blog_date
